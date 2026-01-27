@@ -142,7 +142,7 @@
         .main-container {
             width: 100%;
             position: relative;
-            background-image: url('./assets/img3.jpg');
+            background-image: url('./assets/carousel-image5.png');
             background-attachment: fixed;
             background-size: cover;
             background-position: center;
@@ -219,17 +219,6 @@
             overflow: hidden;
         }
 
-        .petal {
-            position: absolute;
-            width: 25px;
-            height: 25px;
-            background-image: url('./assets/golden-leaf.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            opacity: 0.7;
-            top: -50px;
-            z-index: 2;
-        }
 
         /* Lantern animation container */
         .lantern-container {
@@ -301,13 +290,7 @@
             background-attachment: fixed;
         }
 
-        /* Sky Section - Updated with new sliding background */
-        .sky-section {
-            min-height: 80vh;
-            position: relative;
-            overflow: hidden;
-            background-color: #000;
-        }
+
 
         .sky-background {
             position: absolute;
@@ -597,18 +580,7 @@
             z-index: 2;
         }
 
-        .floral-top-left {
-            top: -8px;
-            left: -8px;
-            background-image: url('./assets/golden-leaf.png');
-        }
 
-        .floral-bottom-right {
-            bottom: -8px;
-            right: -8px;
-            background-image: url('./assets/golden-leaf.png');
-            transform: rotate(180deg);
-        }
 
         .event-details {
             margin-top: 10px;
@@ -734,7 +706,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('./assets/img2.jpg');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('./assets/carousel-image5.png');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -1005,9 +977,6 @@
                 padding-top: 50px;
             }
 
-            .sky-section {
-                min-height: 100vh;
-            }
 
             .fairy-image {
                 max-width: 400px;
@@ -1052,10 +1021,6 @@
 
             .invitation-section {
                 padding-top: 50px;
-            }
-
-            .sky-section {
-                min-height: 100vh;
             }
 
             .fairy-image {
@@ -1166,10 +1131,6 @@
                 z-index: 2;
             }
 
-            .sky-section {
-                min-height: 80vh;
-            }
-
             .fairy-image {
                 max-width: 250px;
                 width: 80%;
@@ -1202,7 +1163,7 @@
         /* Desktop background images */
         @media (min-width: 768px) {
             .invitation-section {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('./assets/img2.png');
+                background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('./assets/carousel-image5.png');
             }
 
             .events-section {
@@ -1214,11 +1175,11 @@
             }
 
             .message-section {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.21)), url('./assets/img5.png');
+                background-image: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.21)), url('./assets/event1.png');
             }
 
             .gallery-section {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.21)), url('./assets/img2.jpg');
+                background-image: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.21)), url('./assets/carousel-image5.png');
             }
 
             .carousel3d-section {
@@ -1245,11 +1206,11 @@
             }
 
             .invitation-section {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.21)), url('./assets/img2.jpg');
+                background-image: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.21)), url('./assets/carousel-image5.png');
             }
 
             .events-section {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.21)), url('./assets/img3.jpg');
+                background-image: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.21)), url('./assets/img1.png');
             }
 
             .route-section {
@@ -1257,15 +1218,15 @@
             }
 
             .message-section {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.21)), url('./assets/img5.png');
+                background-image: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.21)), url('./assets/event1.png');
             }
 
             .gallery-section {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.21)), url('./assets/img5.png');
+                background-image: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.21)), url('./assets/event1.png');
             }
 
             .carousel3d-section {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.21)), url('./assets/img3.jpg');
+                background-image: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.21)), url('./assets/img1.png');
             }
 
             .countdown-section {
@@ -1348,24 +1309,24 @@
 <div id="drag-container" data-aos="zoom-in" data-aos-delay="300">
     <div id="spin-container">
         <!-- Images for the 3D carousel -->
-        <img src="./assets/carousel-image1.png" alt="Baby moment 1">
-        <img src="./assets/carousel-image2.png" alt="Baby moment 2">
-        <img src="./assets/carousel-image3.png" alt="Baby moment 3">
-        <img src="./assets/carousel-image4.png" alt="Baby moment 4">
-        <img src="./assets/carousel-image5.png" alt="Baby moment 5">
-        <img src="./assets/carousel-image6.png" alt="Baby moment 6">
-        <img src="./assets/event1.png" alt="Baby preparation 1">
-        <img src="./assets/event2.png" alt="Baby preparation 2">
-        <img src="./assets/event3.png" alt="Baby preparation 3">
-        <img src="./assets/img1.png" alt="Baby celebration">
-        <img src="./assets/img2.jpg" alt="Baby joy">
-        <img src="./assets/img3.jpg" alt="Baby love">
+        <img src="./assets/1m.png" alt="Baby moment 1">
+        <img src="./assets/2m.png" alt="Baby moment 2">
+        <img src="./assets/3m.png" alt="Baby moment 3">
+        <img src="./assets/4m.png" alt="Baby moment 4">
+        <img src="./assets/5m.png" alt="Baby moment 5">
+        <img src="./assets/6m.png" alt="Baby moment 6">
+        <img src="./assets/7m.png" alt="Baby preparation 1">
+        <img src="./assets/8m.png" alt="Baby preparation 2">
+        <img src="./assets/9m.png" alt="Baby preparation 3">
+        <img src="./assets/10m.png" alt="Baby celebration">
+        <img src="./assets/11m.png" alt="Baby joy">
+        <img src="./assets/12m.png" alt="Baby love">
     </div>
     <div id="ground"></div>
 </div>
-<p style="margin-top: 20px; color: #87ceeb; font-size: 1rem;" data-aos="fade-up" data-aos-delay="500">
+<!-- <p style="margin-top: 20px; color: #87ceeb; font-size: 1rem;" data-aos="fade-up" data-aos-delay="500">
     Drag to rotate • Scroll to zoom • Click to view
-</p>
+</p> -->
                 <p class="invitation-text" data-aos="fade-up" data-aos-delay="500">
                     With hearts full of joy and excitement, we invite you to celebrate our little prince's first magical birthday!
                 </p>
@@ -1440,7 +1401,6 @@
                         <div class="carousel-slide" style="background-image: url('./assets/carousel-image3.png');"></div>
                         <div class="carousel-slide" style="background-image: url('./assets/carousel-image4.png');"></div>
                         <div class="carousel-slide" style="background-image: url('./assets/carousel-image5.png');"></div>
-                        <div class="carousel-slide" style="background-image: url('./assets/carousel-image6.png');"></div>
                     </div>
                     <button class="carousel-arrow carousel-arrow-left">
                         <i class="fas fa-chevron-left"></i>
@@ -1474,13 +1434,7 @@
                 <h3 data-aos="zoom-in" data-aos-delay="700">Sarah & Michael</h3>
             </section>
 
-            <!-- Sky Section - New Section -->
-            <section class="sky-section" id="sky">
-                <div class="sky-background">
-                    <div class="third-image"></div>
-                </div>
-                <img src="./assets/fairy.png" alt="Fairy" class="fairy-image" data-aos="zoom-in" data-aos-delay="300">
-            </section>
+
 
             <!-- Countdown Section -->
             <section class="countdown-section" id="countdown">
@@ -1536,7 +1490,7 @@
 
     <!-- Pram Animation Container -->
     <div class="pram" id="pram">
-        <img id="pramImage" src="./assets/pram-right.png" alt="Pram">
+        <img id="pramImage" src="./assets/train-right.png" alt="Pram">
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -1876,27 +1830,27 @@
             const pramImage = document.getElementById('pramImage');
 
             function animatePramRight() {
-                pramImage.src = './assets/pram-right.png';
+                pramImage.src = './assets/train-right.png';
                 pram.style.left = '-200px'; // Start from left edge (off-screen)
-                pram.style.bottom = '-50px';
-                pram.style.transition = 'left 8s linear';
+                pram.style.bottom = '-80px';
+                pram.style.transition = 'left 18s linear';
                 setTimeout(() => {
                     pram.style.left = 'calc(100vw + 200px)'; // Move to right edge (off-screen)
                 }, 10);
             }
 
             function animatePramLeft() {
-                pramImage.src = './assets/pram-left.png';
+                pramImage.src = './assets/train-left.png';
                 pram.style.left = 'calc(100vw + 200px)'; // Start from right edge (off-screen)
-                pram.style.bottom = '-50px';
-                pram.style.transition = 'left 8s linear';
+                pram.style.bottom = '-80px';
+                pram.style.transition = 'left 18s linear';
                 setTimeout(() => {
                     pram.style.left = '-200px'; // Move to left edge (off-screen)
                 }, 10);
             }
 
             function startAnimationLoop() {
-                // Sequence: pram-right -> pram-left -> repeat
+                // Sequence: train-right -> train-left -> repeat
                 animatePramRight();
                 setTimeout(() => {
                     animatePramLeft();
@@ -2045,7 +1999,9 @@
                         nY = e.clientY;
                     desX = nX - sX;
                     desY = nY - sY;
-                    // Removed user drag movement - only spin in simulation
+                    tX += desX * 0.1;
+                    tY += desY * 0.1;
+                    applyTranform(odrag);
                     sX = nX;
                     sY = nY;
                 };
@@ -2119,7 +2075,7 @@
                 }
 
                 evt.preventDefault();
-
+                
                 var xUp = evt.touches[0].clientX;
                 var yUp = evt.touches[0].clientY;
 
@@ -2128,7 +2084,9 @@
 
                 desX = xDiff;
                 desY = yDiff;
-                // Removed user drag movement - only spin in simulation
+                tX += desX * 0.1;
+                tY += desY * 0.1;
+                applyTranform(odrag);
 
                 xDown = xUp;
                 yDown = yUp;
@@ -2246,22 +2204,19 @@
                             './index.html',
                             './assets/logo.png',
                             './assets/img1.png',
-                            './assets/img2.jpg',
-                            './assets/img3.jpg',
+                            './assets/img1.png',
                             './assets/img4.jpg',
-                            './assets/img5.png',
+                            './assets/event1.png',
                             './assets/frame.png',
-                            './assets/golden-leaf.png',
                             './assets/pearl.png',
-                            './assets/pram-left.png',
-                            './assets/pram-right.png',
+                            './assets/train-left.png',
+                            './assets/train-right.png',
                             './assets/pure-love-304010.mp3',
                             './assets/carousel-image1.png',
                             './assets/carousel-image2.png',
                             './assets/carousel-image3.png',
                             './assets/carousel-image4.png',
                             './assets/carousel-image5.png',
-                            './assets/carousel-image6.png',
                             './assets/event1.png',
                             './assets/event2.png',
                             './assets/event3.png',
