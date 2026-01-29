@@ -9,7 +9,7 @@
     <link rel="manifest" href="./manifest.json">
     
     <!-- iOS Icons -->
-    <link rel="apple-touch-icon" href="./assets/logo.png">
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/dkla3wpga/image/upload/v1769528682/logo_silzy5.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Baby's First Birthday">
@@ -18,7 +18,7 @@
     <meta name="theme-color" content="#0a0a0a">
     
     <!-- Icons for PWA -->
-    <link rel="icon" href="./assets/logo.png" type="image/png">
+    <link rel="icon" href="https://res.cloudinary.com/dkla3wpga/image/upload/v1769528682/logo_silzy5.png" type="image/png">
     
     <!-- External Dependencies -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -158,7 +158,7 @@
             z-index: 5;
         }
 
-        /* Audio container */
+        /* Audio container - UPDATED COLORS */
         .audio-container {
             position: fixed;
             bottom: 20px;
@@ -170,22 +170,24 @@
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background: rgba(0, 191, 255, 0.7);
-            border: 1px solid #00bfff;
+            background: rgba(0, 191, 255, 0.9);
+            border: 2px solid #ffffff;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #00bfff;
+            color: #ffffff;
             cursor: pointer;
             z-index: 1000;
             transition: all 0.3s ease;
             opacity: 0;
             transform: scale(0);
+            box-shadow: 0 0 15px rgba(0, 191, 255, 0.7);
         }
 
         .audio-control:hover {
             transform: scale(1.1);
-            box-shadow: 0 0 15px rgba(0, 191, 255, 0.6);
+            box-shadow: 0 0 20px rgba(0, 191, 255, 1);
+            background: rgba(0, 191, 255, 1);
         }
 
         .audio-control i {
@@ -218,7 +220,6 @@
             z-index: 2;
             overflow: hidden;
         }
-
 
         /* Lantern animation container */
         .lantern-container {
@@ -289,8 +290,6 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
-
-
 
         .sky-background {
             position: absolute;
@@ -579,8 +578,6 @@
             background-repeat: no-repeat;
             z-index: 2;
         }
-
-
 
         .event-details {
             margin-top: 10px;
@@ -979,7 +976,6 @@
                 padding-top: 50px;
             }
 
-
             .fairy-image {
                 max-width: 400px;
             }
@@ -1310,7 +1306,7 @@
     <!-- Audio player -->
     <div class="audio-container">
         <div class="audio-control" id="audioControl">
-            <i class="fas fa-play-circle"></i>
+            <i class="fas fa-volume-up"></i>
         </div>
     </div>
     <audio id="babySong" src="./assets/pure-love-304010.mp3" preload="auto"></audio>
@@ -1330,7 +1326,6 @@
             <!-- Invitation Section -->
             <section class="invitation-section" id="invitation">
                 <h1 data-aos="fade-down" data-aos-duration="1000" class="ceremony-title">Birthday Invitation</h1>
-<!-- <h2 data-aos="fade-down">Precious Moments</h2> -->
 <div id="drag-container" data-aos="zoom-in" data-aos-delay="300">
     <div id="spin-container">
         <!-- Images for the 3D carousel -->
@@ -1349,9 +1344,6 @@
     </div>
     <div id="ground"></div>
 </div>
-<!-- <p style="margin-top: 20px; color: #87ceeb; font-size: 1rem;" data-aos="fade-up" data-aos-delay="500">
-    Drag to rotate • Scroll to zoom • Click to view
-</p> -->
                 <p class="invitation-text" data-aos="fade-up" data-aos-delay="500">
                     With hearts full of joy and excitement, we invite you to celebrate our little prince's first magical birthday!
                 </p>
@@ -1436,8 +1428,6 @@
                 </div>
             </section>
 
-
-
             <!-- Route Section -->
             <section class="route-section" id="route" >
                 <h2 data-aos="fade-down">Celebration Venue</h2>
@@ -1458,8 +1448,6 @@
                 <p data-aos="fade-up" data-aos-delay="600">With all our love,</p>
                 <h3 data-aos="zoom-in" data-aos-delay="700">Sarah & Michael</h3>
             </section>
-
-
 
             <!-- Countdown Section -->
             <section class="countdown-section" id="countdown">
@@ -1497,14 +1485,14 @@
                     </div>
                     <div class="social-icons">
                         <a href="#" class="social-icon" data-aos="zoom-in" data-aos-delay="100"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon" data-aos="zoom-in" data-aos-delay="200"><i class="fab fa-facebook-f"></i></a> <!-- Fixed: Changed from fas fa-facebook-f to fab fa-facebook-f -->
+                        <a href="#" class="social-icon" data-aos="zoom-in" data-aos-delay="200"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-icon" data-aos="zoom-in" data-aos-delay="300"><i class="fas fa-envelope"></i></a>
                     </div>
                     <div class="copyright" data-aos="fade-down" data-aos-delay="400" style="display: flex; align-items: center; flex-direction: column;">
                         <p data-aos="fade-down" data-aos-delay="400">© 2024 Ethan's First Birthday Celebration. All rights reserved.</p>
                         <p>Designed with love for our little prince</p>
                         <div class="footer-text" style="font-size: 1rem; margin-top: 30px; display: flex; align-items: center; flex-direction: row; justify-content: center;">
-                            <img src="./assets/logo.png" style="border-radius: 50%; height: 30px; width: 30px; display: inline; margin: 0 10px;" class="install-logo" id="installLogo" title="Double-click to install app"/>
+                            <img src="https://res.cloudinary.com/dkla3wpga/image/upload/v1769528682/logo_silzy5.png" style="border-radius: 50%; height: 30px; width: 30px; display: inline; margin: 0 10px;" class="install-logo" id="installLogo" title="Double-click to install app"/>
                             <p style="display: inline; margin: 0;">Developed By Brahma Web Invitations.</p>
                         </div>
                     </div>
@@ -1528,48 +1516,76 @@
             delay: 100
         });
 
-        // Audio functionality
+        // Audio functionality with autoplay - UPDATED
         document.addEventListener('DOMContentLoaded', function() {
             const audio = document.getElementById('babySong');
             const audioControl = document.getElementById('audioControl');
-            let isPlaying = false;
+            let audioEnabled = false;
+            audio.loop = true;
+            audio.volume = 0.3;
 
-            // Show audio icon after a delay with animation
+            // Show audio icon with animation
             setTimeout(() => {
                 audioControl.style.opacity = '1';
                 audioControl.style.transform = 'scale(1)';
-            }, 6000);
+            }, 1000);
 
-            // Toggle audio play/pause on icon click
-            audioControl.addEventListener('click', function() {
-                if (isPlaying) {
-                    audio.pause();
-                    audioControl.innerHTML = '<i class="fas fa-play-circle"></i>';
-                    audioControl.style.animation = 'pulse 2s infinite';
+            // Function to handle audio control
+            function handleAudioControl() {
+                if (audioEnabled) {
+                    if (audio.paused) {
+                        audio.play().then(() => {
+                            audioControl.innerHTML = '<i class="fas fa-pause"></i>';
+                            audioControl.classList.add('rotating');
+                        }).catch(e => {
+                            console.log("Play failed:", e);
+                        });
+                    } else {
+                        audio.pause();
+                        audioControl.innerHTML = '<i class="fas fa-play"></i>';
+                        audioControl.classList.remove('rotating');
+                    }
                 } else {
-                    audio.load(); // Ensure audio is loaded
                     audio.play().then(() => {
-                        audioControl.innerHTML = '<i class="fas fa-pause-circle"></i>';
-                        audioControl.style.animation = 'none';
+                        audioEnabled = true;
+                        audioControl.classList.add('rotating');
+                        audioControl.innerHTML = '<i class="fas fa-pause"></i>';
                     }).catch(e => {
-                        console.log("Audio play failed:", e);
-                        // Reset to play icon if failed
-                        audioControl.innerHTML = '<i class="fas fa-play-circle"></i>';
+                        console.log("Play failed:", e);
                     });
                 }
-                isPlaying = !isPlaying;
+            }
+
+            // Audio control click event
+            audioControl.addEventListener('click', handleAudioControl);
+            audioControl.addEventListener('touchstart', function(e) {
+                e.preventDefault();
+                handleAudioControl();
             });
 
-            // Loop audio 50 times
-            let playCount = 0;
-            audio.addEventListener('ended', function() {
-                playCount++;
-                if (playCount < 50) {
-                    audio.currentTime = 0;
-                    audio.play();
-                } else {
-                    audioControl.style.display = 'none';
-                }
+            // Attempt autoplay on load
+            audio.play().then(() => {
+                audioEnabled = true;
+                audioControl.classList.add('rotating');
+                audioControl.innerHTML = '<i class="fas fa-pause"></i>';
+            }).catch(e => {
+                console.log("Autoplay failed:", e);
+                // Fallback: Enable audio on first scroll
+                let firstScroll = true;
+                window.addEventListener('scroll', function() {
+                    if (firstScroll && !audioEnabled) {
+                        setTimeout(() => {
+                            audio.play().then(() => {
+                                audioEnabled = true;
+                                audioControl.classList.add('rotating');
+                                audioControl.innerHTML = '<i class="fas fa-pause"></i>';
+                            }).catch(e => {
+                                console.log("Scroll play failed:", e);
+                            });
+                        }, 500);
+                        firstScroll = false;
+                    }
+                }, { once: true });
             });
 
             // Flower petals animation
@@ -2022,13 +2038,13 @@
                 "orientation": "portrait",
                 "icons": [
                     {
-                        "src": "./assets/logo.png",
+                        "src": "https://res.cloudinary.com/dkla3wpga/image/upload/v1769528682/logo_silzy5.png",
                         "sizes": "192x192",
                         "type": "image/png",
                         "purpose": "any maskable"
                     },
                     {
-                        "src": "./assets/logo.png",
+                        "src": "https://res.cloudinary.com/dkla3wpga/image/upload/v1769528682/logo_silzy5.png",
                         "sizes": "512x512",
                         "type": "image/png",
                         "purpose": "any maskable"
@@ -2055,7 +2071,7 @@
                         const urlsToCache = [
                             './',
                             './index.html',
-                            './assets/logo.png',
+                            'https://res.cloudinary.com/dkla3wpga/image/upload/v1769528682/logo_silzy5.png',
                             './assets/img1.png',
                             './assets/img1.png',
                             './assets/img4.jpg',
